@@ -19,8 +19,8 @@ def prime_number(giveNum):
         print("Given number ", giveNum, " is not a integer!")
     else:
         result = "True"
-        for i in range(2, int(sqrt(giveNum)) + 1):
-            if giveNum % i == 0:
+        for loop_i in range(2, int(sqrt(giveNum)) + 1):
+            if giveNum % loop_i == 0:
                 result = "False"
                 break
             else:
@@ -30,8 +30,8 @@ def prime_number(giveNum):
 
 prime_number(3.3)
 
-for j in range(1, 10):
-    if prime_number(j) == "True":
+for i in range(1, 100000):
+    if prime_number(i) == "True":
         print(j)
     else:
         pass
